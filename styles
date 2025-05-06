@@ -10,6 +10,10 @@ h1, p {
 }
 
 form {
+  width: 60vw;
+  max-width: 1100px;
+  min-width: 600px;
+  margin: 0 auto;
   padding-bottom: 2em;
 }
 
@@ -21,4 +25,30 @@ fieldset{
 label {
   display: block;
   margin: 0.8em;
+}
+
+input,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+button {
+  display: block;
+  width: 64%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1rem;
+
+}
+
+legend {
+  margin: 1em auto;
 }
