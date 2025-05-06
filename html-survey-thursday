@@ -1,51 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Survey Form mt9v0</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <main>
-      <h1 id="title">Thursday Survey Form</h1>
-      <p id="description">thx u 4 spending ur time here, wish u nice friday</p>
-      <form id="survey-form">
-        <fieldset>
-          <label for="name" id="name-label">Name<input id="name" type="text" name="name" placeholder="Enter your name" required/></label>
-          <label for="email" id="email-label">Email<input id="email" name="email" type="email" placeholder="Enter your email" required/></label>
-          <label for="number" id="number-label">Age(optionall)<input id="number" name="number" type="number" min="4" max="104" /></label>
-       </fieldset>
-       <fieldset>
-         <label for="routine">How do you spend your Thursdays? <select id="dropdown" name="routine">
-           <option value="" disabled selected>Select an option</option>
-           <option value="1">Do cleaning and being housewife</option>
-           <option value="2">Work hard gorl</option>
-           <option value="3">Go waltzing to the zoo</option>
-           <option value="4">Study my stuff</option>
-           <option value="5">Do flexing do chillinggg</option>
+<head>
+  <meta charset="UTF-8" />
+  <title>Thursday Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1 id="title">Thursday Survey Form</h1>
+    <p id="description">Thank you for spending your time here, wish you a nice Friday!</p>
+    
+    <form id="survey-form">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name" id="name-label">
+          Name:
+          <input id="name" type="text" name="name" placeholder="Enter your name" required />
+        </label>
+        <label for="email" id="email-label">
+          Email:
+          <input id="email" name="email" type="email" placeholder="Enter your email" required />
+        </label>
+        <label for="number" id="number-label">
+          Age (optional):
+          <input id="number" name="number" type="number" min="4" max="104" placeholder="Enter your age" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Thursday Routine</legend>
+        <label for="dropdown">
+          How do you spend your Thursdays?
+          <select id="dropdown" name="routine" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="1">Do cleaning and being housewife</option>
+            <option value="2">Work hard gorl</option>
+            <option value="3">Go waltzing to the zoo</option>
+            <option value="4">Study my stuff</option>
+            <option value="5">Do flexing, do chillinggg</option>
           </select>
-          <legend>How do you feel about the fact that Thursday is considered as "second Monday"?</legend>
-          <label for="first-option"><input id="first-option" type="radio" class="inline" name="second-monday" checked/>what......</label>
-          <label for="second-option"><input id="second-option" type="radio" class="inline" name="second-monday" />ABSOLUTELY AGREE</label>
-          <label for="third-option"><input id="third-option" type="radio" class="inline" name="second-monday" />neatural idk</label>
-          <label for="fourth-option"><input id="fourth-option" type="radio" class="inline" name="second-monday" /> Thursday is Thursday.</label>
-          <legend>What are your associations with Thursday? (check all that apply)</legend>
-          <label for="first-ass"><input type="checkbox"id="first-ass" name="associations" value="1" class="inline" />Thirsday blessings</label>
-          <label for="second-ass"><input type="checkbox"id="second-ass" name="associations" value="2" class="inline" />Cleaning</label>
-          <label for="third-ass"><input type="checkbox"id="third-ass" name="associations" value="3" class="inline" />Almost weekend</label>
-          <label for="fourth-ass"><input type="checkbox"id="fourth-ass" name="associations" value="4" class="inline" />Green</label>
-          <label for="fifth-ass"><input type="checkbox"id="fifth-ass" name="associations" value="5" class="inline" />Almost weekend</label>
-          <label for="sixth-ass"><input type="checkbox"id="sixth-ass" name="associations" value="6" class="inline" />That specific scholl shedule from back in the day</label>
-          <label for="seventh-ass"><input type="checkbox"id="seventh-ass" name="associations" value="7" class="inline" />Thirst hd</label>
-          <label for="seventh-ass"><input type="checkbox"id="seventh-ass" name="associations" value="7" class="inline" />sendwich with cheese</label>
-          <label for="eighth-ass"><input type="checkbox"id="eighth-ass" name="associations" value="" class="inline" />none of them girl u r insane</label>
-       </fieldset>
-       <fieldset>
-         <label for="text-answer">What is your the least favorite thing about Thursday?</label>
-         <textarea id="text-answer" name="textbox" placeholder="Share your negative aspects related to this day..." rows="3" cols="30"></textarea>
-       </fieldset>
-        <button id="submit" type="submit">Submit</button>
-      </form>
-    </main>
-  </body>
-</html> 
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Thursday as "Second Monday"</legend>
+        <p>How do you feel about the fact that Thursday is considered as a "second Monday"?</p>
+        <label>
+          <input type="radio" name="second-monday" value="1" checked />
+          what......
+        </label>
+        <label>
+          <input type="radio" name="second-monday" value="2" />
+          ABSOLUTELY AGREE
+        </label>
+        <label>
+          <input type="radio" name="second-monday" value="3" />
+          Neutral, IDK
+        </label>
+        <label>
+          <input type="radio" name="second-monday" value="4" />
+          Thursday is Thursday.
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Thursday Associations</legend>
+        <p>What are your associations with Thursday? (check all that apply)</p>
+        <label>
+          <input type="checkbox" name="associations" value="1" class="inline" />
+          Thursday blessings
+        </label>
+        <label>
+          <input type="checkbox" name="associations" value="2" class="inline" />
+          Cleaning
+        </label>
+        <label>
+          <input type="checkbox" name="associations" value="3" class="inline" />
+          Almost weekend
+        </label>
+        <label>
+          <input type="checkbox" name="associations" value="4" class="inline" />
+          Green
+        </label>
+        <label>
+          <input type="checkbox" name="associations" value="5" class="inline" />
+          School schedule from back in the day
+        </label>
+        <label>
+          <input type="checkbox" name="associations" value="6" class="inline" />
+          Thirsty Thursday
+        </label>
+        <label>
+          <input type="checkbox" name="associations" value="7" class="inline" />
+          Sandwich with cheese
+        </label>
+        <label>
+          <input type="checkbox" name="associations" value="none" class="inline" />
+          None of these, girl you’re insane
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Final Thoughts</legend>
+        <label for="text-answer">What is your least favorite thing about Thursday?</label>
+        <textarea id="text-answer" name="textbox" placeholder="Share your negative aspects related to this day..." rows="3" cols="30"></textarea>
+      </fieldset>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
