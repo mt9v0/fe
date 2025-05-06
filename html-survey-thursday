@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form mt9v0</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Thursday Survey Form</h1>
+      <p id="description">thx u 4 spending ur time here, wish u nice friday</p>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Name<input id="name" type="text" name="name" placeholder="Enter your name" required/></label>
+          <label for="email" id="email-label">Email<input id="email" name="email" type="email" placeholder="Enter your email" required/></label>
+          <label for="number" id="number-label">Age(optionall)<input id="number" name="number" type="number" min="4" max="104" /></label>
+       </fieldset>
+       <fieldset> <label for="dropdown-routine">How do you spend your Thursdays? <select id="dropdown" name="routine">
+           <option>Select an option</option>
+           <option>Do cleaning and being housewife</option>
+           <option>Work hard gorl</option>
+           <option>Go waltzing to the zoo</option>
+           <option>Study my stuff</option>
+           <option>Do hard chillinggg</option>
+       </select>
+       </fieldset>
+       <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html> 
