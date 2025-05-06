@@ -15,16 +15,23 @@
           <label for="email" id="email-label">Email<input id="email" name="email" type="email" placeholder="Enter your email" required/></label>
           <label for="number" id="number-label">Age(optionall)<input id="number" name="number" type="number" min="4" max="104" /></label>
        </fieldset>
-       <fieldset> <label for="dropdown-routine">How do you spend your Thursdays? <select id="dropdown" name="routine">
-           <option>Select an option</option>
-           <option>Do cleaning and being housewife</option>
-           <option>Work hard gorl</option>
-           <option>Go waltzing to the zoo</option>
-           <option>Study my stuff</option>
-           <option>Do hard chillinggg</option>
-       </select>
+       <fieldset>
+         <label for="routine">How do you spend your Thursdays? <select id="dropdown" name="routine">
+           <option value="" disabled selected>Select an option</option>
+           <option value="1">Do cleaning and being housewife</option>
+           <option value="2">Work hard gorl</option>
+           <option value="3">Go waltzing to the zoo</option>
+           <option value="4">Study my stuff</option>
+           <option value="5">Do flexing do chillinggg</option>
+          </select>
+          <legend>How do you feel about the fact that Thursday is considered as "second Monday"?</legend>
+          <label for="first-option"><input id="first-option" type="radio" class="inline" name="second-monday" checked/>what......</label>
+          <label for="second-option"><input id="second-option" type="radio" class="inline" name="second-monday" />ABSOLUTLY AGREE</label>
+          <label for="third-option"><input id="third-option" type="radio" class="inline" name="second-monday" />neatural idk</label>
+          <label for="fourth-option"><input id="fourth-option" type="radio" class="inline" name="second-monday" /> Thursday is Thursday.</label>
        </fieldset>
-       <button id="submit" type="submit">Submit</button>
+       <fieldset></fieldset>
+        <button id="submit" type="submit">Submit</button>
       </form>
     </main>
   </body>
